@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mert Özkardeş — Library Workstations Portfolio</title>
+  
+  <!-- Google Fonts: Playfair Display, Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800;900&family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="portfolio-container">
+    
+    <!-- LEFT COLUMN: SEAMLESS 3D LIBRARY BOOKCASE -->
+    <aside class="left-col bookcase-seamless">
+
+      <!-- SEAMLESS CONTINUOUS BOOKCASE SHELVES -->
+      <div class="bookcase-cabinet">
+        
+        <!-- SHELF TIER 1 -->
+        <button class="shelf-tier" data-section="oxford">
+          <div class="shelf-books-row">
+            <span class="book-spine spine-burgundy" style="--h: 52px;"></span>
+            <span class="book-spine spine-leather" style="--h: 60px;"></span>
+            <span class="book-spine spine-navy" style="--h: 46px;"></span>
+            <span class="book-spine spine-gold" style="--h: 56px;"></span>
+            <span class="book-spine spine-forest" style="--h: 50px;"></span>
+            <span class="book-spine spine-burgundy" style="--h: 58px;"></span>
+            <span class="book-spine spine-leather" style="--h: 48px;"></span>
+          </div>
+          <div class="shelf-beam">
+            <div class="brass-label">
+              <span class="label-num">I</span>
+              <span class="label-text">Speech at Oxford</span>
+            </div>
+          </div>
+        </button>
+
+        <!-- SHELF TIER 2: PROJECTS (EXPANDS RIGHT ON CLICK WITH SINGLE COMING SOON BOOK) -->
+        <button class="shelf-tier" data-section="projects" id="projects-tier">
+          <div class="shelf-books-row">
+            <span class="book-spine spine-forest" style="--h: 58px;"></span>
+            <span class="book-spine spine-navy" style="--h: 48px;"></span>
+            <span class="book-spine spine-burgundy" style="--h: 62px;"></span>
+            <span class="book-spine spine-leather" style="--h: 54px;"></span>
+            <span class="book-spine spine-gold" style="--h: 46px;"></span>
+            <span class="book-spine spine-navy" style="--h: 56px;"></span>
+            <span class="book-spine spine-burgundy" style="--h: 50px;"></span>
+          </div>
+          <div class="shelf-beam">
+            <div class="brass-label">
+              <span class="label-num">II</span>
+              <span class="label-text">Projects</span>
+            </div>
+          </div>
+
+          <!-- EXPANDED SHELF EXTENSION DISPLAYING SINGLE COMING SOON PROJECT BOOK -->
+          <div class="expanded-projects-shelf">
+            
+            <div class="project-books-shelf-row">
+              
+              <!-- SINGLE PROJECT BOOK: COMING SOON -->
+              <div class="project-book-item" style="cursor: default;" onclick="event.stopPropagation();">
+                <div class="project-book-spine spine-gold">
+                  <div class="spine-gold-emboss"></div>
+                  <span class="project-title">Coming Soon</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="expanded-shelf-beam"></div>
+          </div>
+
+        </button>
+
+        <!-- SHELF TIER 3: MEDIA OCCURRENCES -->
+        <button class="shelf-tier" data-section="media">
+          <div class="shelf-books-row">
+            <span class="book-spine spine-navy" style="--h: 54px;"></span>
+            <span class="book-spine spine-gold" style="--h: 60px;"></span>
+            <span class="book-spine spine-forest" style="--h: 48px;"></span>
+            <span class="book-spine spine-burgundy" style="--h: 56px;"></span>
+            <span class="book-spine spine-leather" style="--h: 62px;"></span>
+            <span class="book-spine spine-forest" style="--h: 50px;"></span>
+            <span class="book-spine spine-gold" style="--h: 56px;"></span>
+          </div>
+          <div class="shelf-beam">
+            <div class="brass-label">
+              <span class="label-num">III</span>
+              <span class="label-text">Media Occurrences</span>
+            </div>
+          </div>
+        </button>
+
+        <!-- SHELF TIER 4: COFFEE CHAT (DEFAULT ACTIVE PAGE) -->
+        <button class="shelf-tier active" data-section="coffee">
+          <div class="shelf-books-row">
+            <span class="book-spine spine-leather" style="--h: 56px;"></span>
+            <span class="book-spine spine-burgundy" style="--h: 50px;"></span>
+            <span class="book-spine spine-gold" style="--h: 62px;"></span>
+            <span class="book-spine spine-navy" style="--h: 46px;"></span>
+            <span class="book-spine spine-forest" style="--h: 54px;"></span>
+            <span class="book-spine spine-leather" style="--h: 58px;"></span>
+            <span class="book-spine spine-navy" style="--h: 48px;"></span>
+          </div>
+          <div class="shelf-beam">
+            <div class="brass-label">
+              <span class="label-num">IV</span>
+              <span class="label-text">Coffee Chat</span>
+            </div>
+          </div>
+        </button>
+
+      </div>
+
+    </aside>
+
+    <!-- RIGHT COLUMN: MINIMALIST PROPORTIONATE VECTOR ARTWORK & WORKSTATIONS -->
+    <main class="right-col">
+      
+      <!-- WORKSPACES & WORKING DESKS CANVAS -->
+      <div class="content-area">
+        
+        <!-- DESK 01: SPEECH AT OXFORD -->
+        <section class="section" id="section-oxford">
+          <div class="working-desk">
+
+            <!-- MINIMALIST PROPORTIONATE VECTOR STAGE -->
+            <div class="svg-stage-container">
+              <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" class="speech-svg-art">
+                <defs>
+                  <!-- Presentation Screen Blue Gradient -->
+                  <linearGradient id="screenBlue" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#0066FF" />
+                    <stop offset="100%" stop-color="#004AD4" />
+                  </linearGradient>
+
+                  <!-- Podium Wood Gradient -->
+                  <linearGradient id="podiumWood" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#9E612B" />
+                    <stop offset="50%" stop-color="#7D491C" />
+                    <stop offset="100%" stop-color="#5B3310" />
+                  </linearGradient>
+
+                  <!-- Navy Suit Jacket Gradient -->
+                  <linearGradient id="jacketGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#243048" />
+                    <stop offset="100%" stop-color="#141C2C" />
+                  </linearGradient>
+
+                  <!-- Soft Shadow Filter -->
+                  <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+                    <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.6" />
+                  </filter>
+                </defs>
+
+                <!-- 1. PRESENTATION BLUE SCREEN (BACKGROUND) -->
+                <g filter="url(#dropShadow)">
+                  <rect x="90" y="10" width="820" height="310" fill="#111" rx="6" />
+                  <rect x="95" y="15" width="810" height="300" fill="url(#screenBlue)" rx="4" />
+                  
+                  <!-- PRESENTATION SCREEN DESCRIPTION TEXT -->
+                  <g transform="translate(520, 65)" class="screen-speech-description">
+                    <text x="0" y="0" font-family="'Inter', sans-serif" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="0.2">I gave a speech on technological</text>
+                    <text x="0" y="30" font-family="'Inter', sans-serif" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="0.2">advancements and human rights</text>
+                    <text x="0" y="60" font-family="'Inter', sans-serif" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="0.2">at the Rhodes House of Oxford</text>
+                    <text x="0" y="90" font-family="'Inter', sans-serif" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="0.2">University in 2024.</text>
+                  </g>
+
+                  <!-- WATCH LINK WITH 100% PERFECT VERTICAL ALIGNMENT BETWEEN YOUTUBE ICON AND TEXT -->
+                  <a href="https://youtu.be/EbbGutxnNeg" target="_blank" class="svg-a-link">
+                    <g class="screen-link-btn" id="btn-watch-video" transform="translate(735, 272)" style="cursor: pointer;">
+                      <!-- YOUTUBE PLAY BUTTON VECTOR MARK (CENTERED VERTICALLY AT Y = 0) -->
+                      <g class="youtube-logo-mark" transform="translate(0, -11) scale(0.9)">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z" fill="#FFFFFF"/>
+                        <polygon points="9.545,15.15 15.818,12 9.545,8.85" fill="#000000"/>
+                      </g>
+                      <!-- TEXT: Watch (CENTERED VERTICALLY AT Y = 0 WITH DOMINANT-BASELINE="CENTRAL") -->
+                      <text x="32" y="0" dominant-baseline="central" font-family="'Inter', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF" letter-spacing="0.5" class="svg-link-text">Watch</text>
+                    </g>
+                  </a>
+                </g>
+
+                <!-- 2. LEFT SIDE MICROPHONE TABLE -->
+                <ellipse cx="60" cy="420" rx="60" ry="18" fill="#16191F" />
+                <rect x="56" y="420" width="8" height="120" fill="#111" />
+                <g transform="translate(20, 405)">
+                  <rect x="0" y="0" width="40" height="8" rx="3" fill="#778899" />
+                  <ellipse cx="40" cy="4" rx="5" ry="5" fill="#A9A9A9" />
+                  <rect x="8" y="7" width="40" height="8" rx="3" fill="#556677" />
+                  <ellipse cx="48" cy="11" rx="5" ry="5" fill="#8899AA" />
+                </g>
+
+                <!-- 3. THE SPEAKER: COZY BEAR STANDING BEHIND OXFORD PODIUM IN SUIT JACKET -->
+                <g class="speaker-group" transform="translate(320, 135)">
+                  
+                  <!-- Suit Jacket Torso (Extending Down Behind Podium) -->
+                  <path d="M25,92 Q80,88 135,92 L155,270 L5,270 Z" fill="url(#jacketGrad)" />
+                  <!-- Slim Lapels -->
+                  <path d="M45,92 L75,155 L66,190 L45,125 Z" fill="#1E2838" />
+                  <path d="M115,92 L85,155 L94,190 L125,125 Z" fill="#18202E" />
+
+                  <!-- COZY BEAR HEAD & EARS AT PODIUM -->
+                  <g class="user-head-wrapper">
+                    <!-- Bear Head Circle -->
+                    <circle cx="80" cy="45" r="42" fill="#6E472B" />
+                    <!-- Bear Ears -->
+                    <circle cx="45" cy="14" r="15" fill="#6E472B" />
+                    <circle cx="45" cy="14" r="8" fill="#A8754D" />
+                    <circle cx="115" cy="14" r="15" fill="#6E472B" />
+                    <circle cx="115" cy="14" r="8" fill="#A8754D" />
+
+                    <!-- Bear Snout -->
+                    <ellipse cx="80" cy="54" rx="21" ry="15" fill="#D4A074" />
+                    <!-- Nose -->
+                    <ellipse cx="80" cy="47" rx="8" ry="6" fill="#2B1A0E" />
+                    <!-- Smile -->
+                    <path d="M74,57 Q80,64 86,57" fill="none" stroke="#2B1A0E" stroke-width="3" stroke-linecap="round" />
+
+                    <!-- Friendly Eyes -->
+                    <circle cx="62" cy="37" r="5" fill="#1A1009" />
+                    <circle cx="64" cy="35" r="1.5" fill="#FFFFFF" />
+
+                    <circle cx="98" cy="37" r="5" fill="#1A1009" />
+                    <circle cx="100" cy="35" r="1.5" fill="#FFFFFF" />
+
+                    <!-- Cute Cheeks -->
+                    <ellipse cx="53" cy="48" rx="7" ry="5" fill="#FF8C66" opacity="0.4" />
+                    <ellipse cx="107" cy="48" rx="7" ry="5" fill="#FF8C66" opacity="0.4" />
+                  </g>
+
+                  <!-- White Pocket Square -->
+                  <path d="M110,145 L122,142 L119,150 L107,150 Z" fill="#E8E8E8" />
+
+                  <!-- Left Arm Holding Speech Microphone Up to Snout -->
+                  <path d="M25,92 Q10,145 50,145 L60,125 Q38,125 25,92 Z" fill="#18202E" />
+                  <!-- Bear Paw holding microphone -->
+                  <ellipse cx="56" cy="127" rx="7" ry="6" fill="#5C3B22" />
+                  <ellipse cx="56" cy="127" rx="4" ry="3" fill="#D4A074" />
+                  
+                  <!-- Speech Microphone held near chin -->
+                  <rect x="52" y="104" width="5" height="28" rx="2" fill="#111" transform="rotate(-15, 54, 118)" />
+                  <ellipse cx="50" cy="104" rx="4" ry="5" fill="#778899" />
+                  <ellipse cx="50" cy="104" rx="3" ry="4" fill="#DDD" />
+
+                  <!-- Right Arm Resting Forward on Podium Top -->
+                  <path d="M135,92 Q158,145 146,210 L130,210 Q140,150 120,120 Z" fill="#141C29" />
+
+                </g>
+
+                <!-- 4. WOODEN PODIUM WITH OFFICIAL UNIVERSITY OF OXFORD LOGO SIGN -->
+                <g class="podium-group" transform="translate(200, 310)" filter="url(#dropShadow)">
+                  
+                  <!-- Main Wooden Podium Box Structure -->
+                  <rect x="0" y="0" width="400" height="180" rx="3" fill="url(#podiumWood)" stroke="#3B200C" stroke-width="2.5" />
+                  <!-- Top Wood Ledge Deck -->
+                  <rect x="-10" y="-12" width="420" height="16" fill="#B07238" stroke="#3B200C" stroke-width="1.5" rx="2" />
+
+                  <!-- Backlit Glass Acrylic Sign Frame -->
+                  <rect x="50" y="36" width="300" height="88" rx="4" fill="#FFFFFF" stroke="#2D1F14" stroke-width="2.5" />
+
+                  <!-- OFFICIAL UNIVERSITY OF OXFORD CREST & WORDMARK LOGO IMAGE -->
+                  <image href="file:///C:/Users/merto/.gemini/antigravity/brain/0b08fedf-38e4-415f-80a4-99be2d2729ac/.user_uploaded/media_1787974536296.png" x="58" y="42" width="284" height="76" preserveAspectRatio="xMidYMid meet" />
+
+                </g>
+
+                <!-- 5. BEAR'S PAW RESTING ON TOP OF PODIUM DECK -->
+                <g class="speaker-hand-on-podium" transform="translate(320, 135)">
+                  <!-- Bear Paw Resting Directly on Top Ledge of Podium -->
+                  <ellipse cx="132" cy="162" rx="8" ry="6" fill="#5C3B22" />
+                  <ellipse cx="132" cy="162" rx="4" ry="3" fill="#D4A074" />
+                </g>
+
+              </svg>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- DESK 02: PROJECTS -->
+        <section class="section" id="section-projects">
+          <div class="working-desk">
+          </div>
+        </section>
+
+        <!-- DESK 03: MEDIA OCCURRENCES -->
+        <section class="section" id="section-media">
+          <div class="media-shelves-archive">
+            
+            <!-- SHELF ROW 1 (ITEMS 1 - 4) -->
+            <div class="media-shelf-row">
+              <div class="media-news-grid">
+                
+                <!-- NEWS 1: DHA -->
+                <a href="https://www.dha.com.tr/yerel-haberler/izmir/izmirli-mert-deprem-projesiyle-dunyanin-en-par-2518501" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press1.png" alt="Demirören News Agency (DHA)" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Demirören News Agency (DHA)</span>
+                </a>
+
+                <!-- NEWS 2: Hürriyet -->
+                <a style="cursor: default;" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press2.JPG" alt="Hürriyet" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Hürriyet (Front Page)</span>
+                </a>
+
+                <!-- NEWS 3: Posta -->
+                <a style="cursor: default;" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press3.jpg" alt="Posta" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Posta (Front Page)</span>
+                </a>
+
+                <!-- NEWS 4: Milliyet (Website) -->
+                <a href="https://www.milliyet.com.tr/egitim/dunyanin-en-parlak-100-ogrenci-listesinde-7208722" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press4.png" alt="Milliyet" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Milliyet (Website)</span>
+                </a>
+
+              </div>
+              <div class="wooden-shelf-beam"></div>
+            </div>
+
+            <!-- SHELF ROW 2 (ITEMS 5 - 8) -->
+            <div class="media-shelf-row">
+              <div class="media-news-grid">
+                
+                <!-- NEWS 5: Milliyet Newspaper -->
+                <a href="https://www.milliyet.com.tr/egitim/dunyanin-en-parlak-100-ogrenci-listesinde-7208722" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press5.png" alt="Milliyet Newspaper" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Milliyet Newspaper</span>
+                </a>
+
+                <!-- NEWS 6: Yeni Bakış -->
+                <a href="https://www.yenibakishaber.com/dunyanin-en-genc-100-ogrencisinden-biri-izmirden-cikti" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press6.png" alt="Yeni Bakış" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Yeni Bakış</span>
+                </a>
+
+                <!-- NEWS 7: Gündeme Bakış -->
+                <a href="https://www.gundemebakis.com/izmirli-mert-dunyanin-en-parlak-100-ogrencisinden-biri-oldu" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press7.png" alt="Gündeme Bakış" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Gündeme Bakış</span>
+                </a>
+
+                <!-- NEWS 8: Ege Postası -->
+                <a href="https://www.egepostasi.com/haber/Izmirli-Mert-deprem-projesiyle-dunyanin-en-parlak-100-ogrencisi-arasina-girdi/344496" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press8.png" alt="Ege Postası" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Ege Postası</span>
+                </a>
+
+              </div>
+              <div class="wooden-shelf-beam"></div>
+            </div>
+
+            <!-- SHELF ROW 3 (ITEMS 9 - 12) -->
+            <div class="media-shelf-row">
+              <div class="media-news-grid">
+                
+                <!-- NEWS 9: Gerçek İzmir -->
+                <a href="https://www.gercekizmir.com/haber/Mert-deprem-projesiyle-Izmirin-gururu-oldu/159359" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press9.png" alt="Gerçek İzmir" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Gerçek İzmir</span>
+                </a>
+
+                <!-- NEWS 10: İzmirde Son Dakika -->
+                <a href="https://www.instagram.com/p/DBBIRJbq2cy/?hl=de" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press10.png" alt="İzmirde Son Dakika" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">İzmirde Son Dakika</span>
+                </a>
+
+                <!-- NEWS 11: Son Kale İzmir -->
+                <a href="https://www.sonkaleizmir.com/haber/Izmirli-Mert-dunyanin-en-parlak-100-ogrencisinden-biri-oldu/158609" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press11.png" alt="Son Kale İzmir" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Son Kale İzmir</span>
+                </a>
+
+                <!-- NEWS 12: Gazetem İzmir -->
+                <a href="https://www.gazetemizmir.com/izmirli-mert-deprem-projesiyle-dunyanin-en-parlak-100-ogrencisi-arasina-girdi/110422/" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press12.png" alt="Gazetem İzmir" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Gazetem İzmir</span>
+                </a>
+
+              </div>
+              <div class="wooden-shelf-beam"></div>
+            </div>
+
+            <!-- SHELF ROW 4 (ITEMS 13 - 16) -->
+            <div class="media-shelf-row">
+              <div class="media-news-grid">
+                
+                <!-- NEWS 13: InIzmir -->
+                <a style="cursor: default;" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press13.png" alt="InIzmir" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">InIzmir</span>
+                </a>
+
+                <!-- NEWS 14: Bizim İzmir -->
+                <a href="https://www.bizimizmir.net/izmirli-mert-dunyanin-en-parlak-100-ogrencisinden-biri-60639" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press14.png" alt="Bizim İzmir" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Bizim İzmir</span>
+                </a>
+
+                <!-- NEWS 15: Eğitim Ajansı -->
+                <a href="https://www.egitimajansi.com/haber/dunyanin-en-parlak-100-ogrenci-listesinde-haberi-87304h.html" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press15.png" alt="Eğitim Ajansı" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Eğitim Ajansı</span>
+                </a>
+
+                <!-- NEWS 16: Bornovanın Nabzı -->
+                <a style="cursor: default;" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press16.png" alt="Bornovanın Nabzı" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Bornovanın Nabzı</span>
+                </a>
+
+              </div>
+              <div class="wooden-shelf-beam"></div>
+            </div>
+
+            <!-- SHELF ROW 5 (ITEMS 17 - 20) -->
+            <div class="media-shelf-row">
+              <div class="media-news-grid">
+                
+                <!-- NEWS 17: KDZ Ereğli Halkın Habercisi -->
+                <a href="https://www.kdzereglihalkinhabercisi.com/izmir-depreminden-ilham-aldi-dunyanin-en-parlak-100-ogrencisinden-biri-oldu-turk-gencinden-buyuk-basari/75594/" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press1.png" alt="KDZ Ereğli Halkın Habercisi" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">KDZ Ereğli Halkın Habercisi</span>
+                </a>
+
+                <!-- NEWS 18: Haber Gündemim -->
+                <a href="https://www.habergundemim.com/haber-mert-ozkardes-deprem-guvenligi-projesiyle-berkeley-yolcusu-263660.html" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press4.png" alt="Haber Gündemim" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Haber Gündemim</span>
+                </a>
+
+                <!-- NEWS 19: Bursa News -->
+                <a href="https://www.bursa.news/gundem/izmir-depreminden-ilham-aldi-dunyanin-en-parlak-100-ogrencisinden-biri-oldu-turk-gencinden-buyuk-basari-88787" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press6.png" alt="Bursa News" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Bursa News</span>
+                </a>
+
+                <!-- NEWS 20: Haber Ege -->
+                <a href="https://www.haberege.com.tr/izmir-depreminden-ilham-aldi-dunyanin-en-parlak-100-ogrencisinden-biri-oldu-turk-gencinden-buyuk-basari-1787728028-3644702" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press8.png" alt="Haber Ege" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Haber Ege</span>
+                </a>
+
+              </div>
+              <div class="wooden-shelf-beam"></div>
+            </div>
+
+            <!-- SHELF ROW 6 (ITEMS 21 - 24) -->
+            <div class="media-shelf-row">
+              <div class="media-news-grid">
+                
+                <!-- NEWS 21: Alparslan Diyarı -->
+                <a href="https://www.alparslandiyari.com/haber/mert-ozkardes-deprem-guvenligi-projesiyle-uluslararasi-basari-elde-etti_71274/" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press9.png" alt="Alparslan Diyarı" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Alparslan Diyarı</span>
+                </a>
+
+                <!-- NEWS 22: Toplumsal -->
+                <a href="https://www.toplumsal.com.tr/haber/turk-gencten-deprem-guvenligi-projesiyle-buyuk-basari_22947/" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press12.png" alt="Toplumsal" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Toplumsal</span>
+                </a>
+
+                <!-- NEWS 23: Marmara Yaşam -->
+                <a href="https://www.marmarayasam.com/amp/igf-haber/izmir-depreminden-ilham-aldi-dunyanin-en-parlak-100-ogrencisinden-biri-oldu-turk-gencinden-buyuk-basari-574139" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press15.png" alt="Marmara Yaşam" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">Marmara Yaşam</span>
+                </a>
+
+                <!-- NEWS 24: ABDPost -->
+                <a href="https://www.abdpost.com/turk-gencinden-buyuk-basari-dunyanin-en-parlak-100-ogrencisi-arasinda/440354" target="_blank" rel="noopener noreferrer" class="news-item-card">
+                  <div class="news-cover-wrapper">
+                    <img src="https://www.mertozkardes.com.tr/press/press4.png" alt="ABDPost" class="news-cover-img">
+                    <div class="news-hover-overlay"></div>
+                  </div>
+                  <span class="news-title">ABDPost</span>
+                </a>
+
+              </div>
+              <div class="wooden-shelf-beam"></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- DESK 04: COFFEE CHAT (DEFAULT ACTIVE LANDING SECTION WITH CENTERED FIREPLACE & MINIMALIST TEXT LINKS) -->
+        <section class="section active" id="section-coffee">
+          <div class="coffee-lounge-container">
+            
+            <!-- TOP GREETING -->
+            <h1 class="coffee-greeting-top">Hey, I am Mert</h1>
+
+            <!-- MINIMALIST HERO TEXT LINKS (LINKEDIN, EMAIL, ABOUT ME) -->
+            <div class="coffee-hero-text-links">
+              <a href="https://www.linkedin.com/in/mert-ozkardes/" target="_blank" rel="noopener noreferrer" class="text-link-item">linkedin</a>
+              <span class="text-link-dot">•</span>
+              <a href="mailto:merto@berkeley.edu" class="text-link-item">email</a>
+              <span class="text-link-dot">•</span>
+              <span class="text-link-item text-link-disabled" onclick="event.stopPropagation(); alert('About Me coming soon!');">about me</span>
+            </div>
+
+            <!-- CENTERPIECE VECTOR CAMPFIRE & COFFEE SCENE (CLICKABLE ENTIRELY TO CALENDLY) -->
+            <div class="campfire-scene-wrapper">
+              
+              <!-- CLICKABLE WRAPPER COVERING BEAR, BUBBLE, FIRE & COFFEE MUG -->
+              <a href="https://calendly.com/mertozkardes/coffee-chat" target="_blank" rel="noopener noreferrer" class="interactive-fire-coffee-link" style="display: block; width: 100%;">
+                
+                <svg viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg" class="campfire-svg">
+                  <defs>
+                    <!-- Flame Glow Filter -->
+                    <filter id="fireGlow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feGaussianBlur stdDeviation="8" result="blur" />
+                      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+
+                    <!-- Steam Fade Gradient -->
+                    <linearGradient id="steamGrad" x1="0" y1="1" x2="0" y2="0">
+                      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.75" />
+                      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+                    </linearGradient>
+
+                    <!-- Warm Ground Ambient Glow CENTERED AT X=450 -->
+                    <radialGradient id="fireLightGlow" cx="50%" cy="80%" r="55%">
+                      <stop offset="0%" stop-color="#FF7700" stop-opacity="0.38" />
+                      <stop offset="60%" stop-color="#FF3300" stop-opacity="0.1" />
+                      <stop offset="100%" stop-color="#0E0B08" stop-opacity="0" />
+                    </radialGradient>
+
+                    <!-- REUSABLE IDENTICAL COZY WOODEN LOG BENCH -->
+                    <g id="cozy-log-bench">
+                      <rect x="0" y="10" width="130" height="22" fill="#4A2F1B" rx="4" stroke="#2B1A0E" stroke-width="2" />
+                      <ellipse cx="65" cy="10" rx="65" ry="12" fill="#3D2413" stroke="#2B1A0E" stroke-width="2" />
+                    </g>
+                  </defs>
+
+                  <!-- WARM AMBIENT LIGHT GLOW ON FLOOR (CENTERED AT X=450) -->
+                  <ellipse cx="450" cy="370" rx="360" ry="60" fill="url(#fireLightGlow)" />
+
+                  <!-- 1. COZY BEAR SITTING ON LOG ON LEFT SIDE OF FIREPLACE (CENTER AT X=225) -->
+                  <g class="bear-left-group" transform="translate(100, 175)" style="cursor: pointer;">
+                    
+                    <!-- SPEECH BUBBLE CALLOUT: "click to grab some coffee ☕" -->
+                    <g class="speech-bubble-callout" transform="translate(20, -20)">
+                      <rect x="0" y="0" width="210" height="38" rx="8" fill="#2B1E13" stroke="#D4A054" stroke-width="2" filter="url(#dropShadow)" />
+                      <!-- Bubble Pointer Arrow -->
+                      <polygon points="105,38 118,38 112,48" fill="#2B1E13" stroke="#D4A054" stroke-width="2" />
+                      <rect x="103" y="36" width="18" height="4" fill="#2B1E13" />
+                      <text x="105" y="24" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#FFF5E5">click to grab some coffee ☕</text>
+                    </g>
+
+                    <!-- VECTOR BEAR AVATAR -->
+                    <g class="cozy-bear-avatar" transform="translate(60, 45)">
+                      
+                      <!-- Sitting Wooden Log Bench (IDENTICAL COMPONENT) -->
+                      <use href="#cozy-log-bench" x="0" y="135" />
+                      
+                      <!-- Bear Feet (Sitting on Log) -->
+                      <ellipse cx="25" cy="142" rx="15" ry="10" fill="#5C3B22" />
+                      <ellipse cx="25" cy="142" rx="8" ry="5" fill="#D4A074" />
+                      <ellipse cx="105" cy="142" rx="15" ry="10" fill="#5C3B22" />
+                      <ellipse cx="105" cy="142" rx="8" ry="5" fill="#D4A074" />
+
+                      <!-- Bear Body / Torso -->
+                      <ellipse cx="65" cy="105" rx="42" ry="46" fill="#6E472B" />
+                      <!-- Light Cream Belly Patch -->
+                      <ellipse cx="65" cy="110" rx="26" ry="30" fill="#D4A074" opacity="0.35" />
+
+                      <!-- Bear Head -->
+                      <circle cx="65" cy="55" r="36" fill="#6E472B" />
+                      <!-- Ears -->
+                      <circle cx="35" cy="28" r="13" fill="#6E472B" />
+                      <circle cx="35" cy="28" r="7" fill="#A8754D" />
+                      <circle cx="95" cy="28" r="13" fill="#6E472B" />
+                      <circle cx="95" cy="28" r="7" fill="#A8754D" />
+
+                      <!-- Bear Snout -->
+                      <ellipse cx="65" cy="63" rx="18" ry="13" fill="#D4A074" />
+                      <!-- Nose -->
+                      <ellipse cx="65" cy="57" rx="7" ry="5" fill="#2B1A0E" />
+                      <!-- Smile -->
+                      <path d="M60,66 Q65,72 70,66" fill="none" stroke="#2B1A0E" stroke-width="2.5" stroke-linecap="round" />
+
+                      <!-- Friendly Eyes -->
+                      <circle cx="50" cy="48" r="4" fill="#1A1009" />
+                      <circle cx="51.5" cy="46.5" r="1.3" fill="#FFFFFF" />
+                      
+                      <circle cx="80" cy="48" r="4" fill="#1A1009" />
+                      <circle cx="81.5" cy="46.5" r="1.3" fill="#FFFFFF" />
+
+                      <!-- Cute Cheeks -->
+                      <ellipse cx="42" cy="58" rx="6" ry="4" fill="#FF8C66" opacity="0.4" />
+                      <ellipse cx="88" cy="58" rx="6" ry="4" fill="#FF8C66" opacity="0.4" />
+
+                      <!-- BEAR ARMS & COFFEE MUG CENTERED RIGHT IN FRONT OF BELLY -->
+                      <g class="bear-centered-coffee-mug-holding">
+                        <!-- Bear Left Arm Curving Inward -->
+                        <path d="M30,82 Q18,92 24,108 Q30,116 38,110 Z" fill="#5C3B22" />
+                        <!-- Bear Right Arm Curving Inward -->
+                        <path d="M100,82 Q112,92 106,108 Q100,116 92,110 Z" fill="#5C3B22" />
+
+                        <!-- STEAMING COFFEE MUG LABELED 'M' CENTERED AT X=65 -->
+                        <g class="coffee-mug-group" transform="translate(48, 90)">
+                          <ellipse cx="17" cy="44" rx="16" ry="4" fill="#000000" opacity="0.4" />
+                          <!-- Mug Body -->
+                          <rect x="0" y="8" width="34" height="36" rx="4" fill="#2B1E13" stroke="#D4A054" stroke-width="2" />
+                          <!-- Mug Handle (on left side) -->
+                          <path d="M0,14 C-10,14 -10,34 0,34" fill="none" stroke="#D4A054" stroke-width="4" stroke-linecap="round" />
+                          <!-- Coffee Liquid Surface -->
+                          <ellipse cx="17" cy="9" rx="15" ry="4" fill="#5B3310" stroke="#D4A074" stroke-width="1" />
+
+                          <!-- Logo Badge 'M' -->
+                          <rect x="10" y="20" width="14" height="14" rx="2" fill="#D4A054" />
+                          <text x="17" y="31" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="900" font-size="9" fill="#140E0A">M</text>
+
+                          <!-- STEAM LINES -->
+                          <g class="coffee-steam">
+                            <path d="M10,2 Q6,-7 12,-16 Q18,-25 10,-34" fill="none" stroke="url(#steamGrad)" stroke-width="2" stroke-linecap="round" class="steam-line steam-1" />
+                            <path d="M17,0 Q22,-9 15,-18 Q8,-27 18,-36" fill="none" stroke="url(#steamGrad)" stroke-width="2.5" stroke-linecap="round" class="steam-line steam-2" />
+                            <path d="M24,3 Q19,-4 25,-13 Q31,-22 22,-31" fill="none" stroke="url(#steamGrad)" stroke-width="1.8" stroke-linecap="round" class="steam-line steam-3" />
+                          </g>
+
+                          <!-- LEFT PAW GRIPPING HANDLE -->
+                          <ellipse cx="-5" cy="24" rx="5" ry="6" fill="#5C3B22" />
+                          <ellipse cx="-5" cy="24" rx="3" ry="4" fill="#D4A074" />
+
+                          <!-- RIGHT PAW HOLDING OTHER SIDE OF MUG -->
+                          <ellipse cx="38" cy="24" rx="5" ry="6" fill="#5C3B22" />
+                          <ellipse cx="38" cy="24" rx="3" ry="4" fill="#D4A074" />
+                        </g>
+                      </g>
+
+                    </g>
+                  </g>
+
+                  <!-- 2. CAMPFIRE GROUP CENTERED PERFECTLY AT X=450 -->
+                  <g class="interactive-fire-coffee-group" style="cursor: pointer;">
+                    
+                    <!-- GROUND STONE RING CENTERED AT X=450 -->
+                    <g class="stone-ring">
+                      <ellipse cx="450" cy="370" rx="140" ry="24" fill="#1C140E" stroke="#3D291A" stroke-width="3" />
+                      <circle cx="330" cy="365" r="14" fill="#2E2219" />
+                      <circle cx="365" cy="382" r="16" fill="#3D2B1E" />
+                      <circle cx="410" cy="390" r="15" fill="#2E2219" />
+                      <circle cx="460" cy="392" r="18" fill="#3D2B1E" />
+                      <circle cx="510" cy="388" r="16" fill="#2E2219" />
+                      <circle cx="550" cy="378" r="15" fill="#3D2B1E" />
+                      <circle cx="575" cy="362" r="14" fill="#2E2219" />
+                    </g>
+
+                    <!-- WOOD LOGS CENTERED AT X=450 -->
+                    <g class="fire-logs">
+                      <rect x="360" y="340" width="180" height="24" rx="6" fill="#4A2F1B" stroke="#2B1A0E" stroke-width="2" transform="rotate(-18, 450, 352)" />
+                      <rect x="360" y="340" width="180" height="24" rx="6" fill="#5C3B22" stroke="#2B1A0E" stroke-width="2" transform="rotate(18, 450, 352)" />
+                      <rect x="370" y="348" width="160" height="20" rx="5" fill="#3D2413" stroke="#2B1A0E" stroke-width="1.5" />
+                    </g>
+
+                    <!-- ANIMATED CAMPFIRE FLAMES CENTERED AT X=450 -->
+                    <g class="fire-flames" filter="url(#fireGlow)">
+                      <!-- Outer Deep Orange Flame -->
+                      <path d="M450,200 Q500,270 490,350 Q450,360 410,350 Q400,270 450,200 Z" fill="#FF4500" class="flame-layer flame-outer" />
+                      <!-- Middle Fiery Yellow Flame -->
+                      <path d="M450,230 Q485,290 475,350 Q450,358 425,350 Q415,290 450,230 Z" fill="#FFA500" class="flame-layer flame-mid" />
+                      <!-- Inner Glowing Yellow Core -->
+                      <path d="M450,260 Q470,310 462,350 Q450,355 438,350 Q430,310 450,260 Z" fill="#FFD700" class="flame-layer flame-inner" />
+                      <!-- White Hot Center Core -->
+                      <path d="M450,290 Q460,325 456,350 Q450,353 444,350 Q440,325 450,290 Z" fill="#FFF5E5" class="flame-layer flame-core" />
+                    </g>
+
+                    <!-- RISING SPARKS CENTERED AROUND X=450 -->
+                    <g class="fire-sparks">
+                      <circle cx="440" cy="180" r="3" fill="#FFD700" class="spark spark-1" />
+                      <circle cx="470" cy="160" r="2.5" fill="#FF4500" class="spark spark-2" />
+                      <circle cx="425" cy="150" r="2" fill="#FFA500" class="spark spark-3" />
+                      <circle cx="460" cy="130" r="3" fill="#FFD700" class="spark spark-4" />
+                    </g>
+
+                  </g>
+
+                  <!-- 3. COZY WOODEN LOG BENCH PERFECTLY SYMMETRIC & IDENTICAL ON RIGHT (CENTER AT X=675) -->
+                  <use href="#cozy-log-bench" x="610" y="355" />
+
+                  <!-- 4. STEAMING COFFEE MUG LABELED 'D' RESTING ON RIGHT LOG BENCH -->
+                  <g class="right-log-coffee-mug-group" transform="translate(658, 318)">
+                    <!-- Shadow under mug on log -->
+                    <ellipse cx="17" cy="44" rx="16" ry="4" fill="#000000" opacity="0.4" />
+                    
+                    <!-- Mug Body -->
+                    <rect x="0" y="8" width="34" height="36" rx="4" fill="#2B1E13" stroke="#D4A054" stroke-width="2" />
+                    <!-- Mug Handle (on right side) -->
+                    <path d="M34,14 C44,14 44,34 34,34" fill="none" stroke="#D4A054" stroke-width="4" stroke-linecap="round" />
+                    <!-- Coffee Liquid Surface -->
+                    <ellipse cx="17" cy="9" rx="15" ry="4" fill="#5B3310" stroke="#D4A074" stroke-width="1" />
+
+                    <!-- Gold Badge Labeled 'D' -->
+                    <rect x="10" y="20" width="14" height="14" rx="2" fill="#D4A054" />
+                    <text x="17" y="31" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="900" font-size="9" fill="#140E0A">D</text>
+
+                    <!-- STEAM LINES RISING FROM MUG 'D' -->
+                    <g class="coffee-steam">
+                      <path d="M10,2 Q6,-7 12,-16 Q18,-25 10,-34" fill="none" stroke="url(#steamGrad)" stroke-width="2" stroke-linecap="round" class="steam-line steam-1" />
+                      <path d="M17,0 Q22,-9 15,-18 Q8,-27 18,-36" fill="none" stroke="url(#steamGrad)" stroke-width="2.5" stroke-linecap="round" class="steam-line steam-2" />
+                      <path d="M24,3 Q19,-4 25,-13 Q31,-22 22,-31" fill="none" stroke="url(#steamGrad)" stroke-width="1.8" stroke-linecap="round" class="steam-line steam-3" />
+                    </g>
+                  </g>
+
+                </svg>
+
+              </a>
+
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- SPEECH DETAILS POPUP MODAL -->
+  <div class="modal-overlay" id="details-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Oxford University Keynote — Speech at Oxford</h3>
+        <button class="modal-close-btn" id="close-details-btn">ESC / CLOSE ✕</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-speaker-tag">SPEAKER: MERT ÖZKARDEŞ | VENUE: OXFORD UNIVERSITY</p>
+        
+        <blockquote class="modal-quote">
+          "We do not build machines to replace human cognition; we design systems to expand the frontier of questions humanity is capable of asking."
+        </blockquote>
+
+        <div class="modal-text">
+          <p>
+            I gave a speech on technological advancements and human rights at the Rhodes House of Oxford University in 2024.
+          </p>
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://youtu.be/EbbGutxnNeg" target="_blank" class="modal-btn">Watch Video Recording (YouTube) ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
