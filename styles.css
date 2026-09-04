@@ -891,3 +891,137 @@ html, body {
   .media-news-grid { grid-template-columns: repeat(2, 1fr); }
   .coffee-greeting-top { font-size: 2rem; }
 }
+
+/* --------------------------------------------------------------------------
+   PROJECTS SECTION STYLING (#section-projects)
+   -------------------------------------------------------------------------- */
+.projects-empty-state {
+  padding: 2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.projects-header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #F0E6D2;
+  margin-bottom: 0.4rem;
+}
+
+.projects-subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #A89078;
+  font-size: 1.05rem;
+}
+
+.project-detail-workspace {
+  padding: 1.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.project-period-badge {
+  display: inline-block;
+  background: rgba(212, 160, 84, 0.18);
+  color: #F5C87A;
+  border: 1px solid rgba(212, 160, 84, 0.45);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 14px;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.project-main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #F0E6D2;
+  line-height: 1.25;
+  margin-bottom: 1.6rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.project-summary-box {
+  background: rgba(43, 30, 19, 0.75);
+  border-left: 4px solid #D4A054;
+  border-radius: 0 8px 8px 0;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.summary-box-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #F5C87A;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.summary-box-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  color: #FFF5E5;
+  line-height: 1.6;
+}
+
+.project-lorem-content {
+  margin-bottom: 2rem;
+}
+
+.lorem-box-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #A89078;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.6rem;
+}
+
+.project-lorem-content p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.98rem;
+  color: #D4C5B2;
+  line-height: 1.7;
+}
+
+.project-download-wrapper {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.project-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #D4A054, #B38236);
+  color: #0E0B08;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 800;
+  padding: 0.85rem 1.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(212, 160, 84, 0.3);
+  cursor: pointer;
+}
+
+.project-download-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #F5C87A, #D4A054);
+  box-shadow: 0 6px 20px rgba(212, 160, 84, 0.5);
+  color: #000000;
+}
