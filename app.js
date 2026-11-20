@@ -1,70 +1,138 @@
 (function () {
   'use strict';
 
-  // 1. REAL PROJECTS DATASET MATCHING MERTOZKARDES.COM.TR
+  // 1. PROJECTS DATASET
   const projectsData = {
-    rocket: {
-      title: "Head of Avionics, Model Rocket Club",
-      date: "2022 – 2026",
-      summary: "Led the R&D of 3 model rockets carrying 9 lbs of experimental payload to 7,400 ft with a focus on avionics design and simulation testing of components in flight.",
-      lorem: "Developed telemetry systems, flight computer microcontrollers, and recovery parachutes for high-altitude atmospheric rockets. Tested extensively in flight simulations and real flight launches at TeknoFest aerospace competitions.",
-      fileName: "Model_Rocket_Avionics_Report.pdf",
-      docUrl: "https://www.mertozkardes.com.tr/",
-      projectUrl: "https://www.mertozkardes.com.tr/"
+    kedy: {
+      title: "Co-Founder & CTO, Kedy Technologies",
+      date: "2025 – Present",
+      summary: "Co-founded Kedy, an efficient-AI research lab between İzmir and San Francisco, and lead technical development of our flagship model NOVAQ and the E1 small-language-model family.",
+      highlights: [
+        "NOVAQ scores 88.5% on IFEval (instruction-level, strict).",
+        "Built the synthetic-data and fine-tuning pipeline behind every model we ship.",
+        "Shipped an OpenAI-compatible chat API and a developer dashboard.",
+        "Deployed fine-tuned E1 models for a space-debris nonprofit's collision work and an FRC robot (+30% in autonomous).",
+        "1,000 users in launch week; 3rd place at Princeton's Tiger Launch startup competition."
+      ],
+      tags: ["LLM fine-tuning", "Synthetic data", "PyTorch", "API design"],
+      links: [{ label: "Visit kedy.dev", url: "https://www.kedy.dev" }]
+    },
+    tickmark: {
+      title: "Tickmark — Finalist, BBS × Ramp Hackathon",
+      date: "Oct 2026",
+      summary: "Co-built (team of 2) an app that turns an auditor's request list into a cited evidence binder, pulled from live Ramp data.",
+      highlights: [
+        "Caught 8 of 8 planted control failures with 0 false alarms.",
+        "Flagged 122 exceptions across a 1,170-transaction Ramp sandbox.",
+        "Every finding is cited back to the source transaction, so auditors can verify it in one click."
+      ],
+      tags: ["TypeScript", "Next.js", "Claude API", "Ramp API", "MCP"],
+      links: [{ label: "View on GitHub", url: "https://github.com/VolodymyrLinuxovich/tickmark" }]
+    },
+    chameleon: {
+      title: "Chameleon — Finalist, Adobe University Hackathon",
+      date: "Oct 2026",
+      summary: "Co-built (team of 2) an engine that rearranges a design for any canvas size instead of stretching it.",
+      highlights: [
+        "Passed every hard layout rule on 2,250 of 2,250 test resizes across 15 formats.",
+        "A plain stretch passes the same rules only 3% of the time.",
+        "North America finalist at Adobe's University Hackathon."
+      ],
+      tags: ["Python", "Skia", "pytest", "Docker"],
+      links: [{ label: "View on GitHub", url: "https://github.com/VolodymyrLinuxovich/chameleon" }]
     },
     earthquake: {
-      title: "Founder, Earthquake Early Warning & Structural Safety System",
+      title: "Earthquake Early Warning & Structural Safety System",
       date: "2022 – 2024",
-      summary: "Reduced unsafe building detection costs x15 and was invited as a speaker by the ministry for creating the first CNN-based model comparing acceleration data against the calculated risk.",
-      lorem: "Created following the 2020 İzmir earthquake. Selected as one of 100 Rise Global Winners by Rhodes Trust & Schmidt Futures for converting complex seismic acceleration data into real-time 3D risk assessment models.",
-      fileName: "Earthquake_Safety_Model_Report.pdf",
-      docUrl: "https://www.mertozkardes.com.tr/",
-      projectUrl: "https://www.mertozkardes.com.tr/"
-    },
-    actior: {
-      title: "Co-Founder, Actior Exam Management Systems",
-      date: "2024",
-      summary: "Managed over 10,000 individual applications over 2 schools by co-creating an internal exam registration and management portal for students and administrators.",
-      lorem: "Built a high-concurrency exam registration portal equipped with automated application tracking, online payment processing, seating arrangement algorithms, and administrative reporting dashboards.",
-      fileName: "Actior_Exam_Portal_Documentation.pdf",
-      docUrl: "https://www.mertozkardes.com.tr/",
-      projectUrl: "https://www.mertozkardes.com.tr/"
-    },
-    cras: {
-      title: "Creator, Cras AI Multilingual LLM Platform",
-      date: "2024 – Present",
-      summary: "Architected Cras AI, a high-performance multilingual LLM platform featuring PDF and image document ingestion powered by a Go-based backend microservice architecture.",
-      lorem: "Engineered scalable document processing pipelines with OCR, vector embedding search, and real-time streaming LLM responses across multiple languages for enterprise and research documents.",
-      fileName: "Cras_AI_Architecture_Spec.pdf",
-      docUrl: "https://www.mertozkardes.com.tr/",
-      projectUrl: "https://www.mertozkardes.com.tr/"
-    },
-    rumer: {
-      title: "Founder, Rumer Digital Business Card Platform",
-      date: "2024",
-      summary: "Designed and launched Rumer, a modern digital business card platform featuring instant contact sharing and dynamic social graph networking features.",
-      lorem: "Full-stack web application enabling professionals to exchange digital contact cards via NFC and QR codes, build dynamic professional connections, and track interaction analytics.",
-      fileName: "Rumer_Platform_Overview.pdf",
-      docUrl: "https://www.mertozkardes.com.tr/",
-      projectUrl: "https://www.mertozkardes.com.tr/"
+      summary: "After the 2020 İzmir earthquake, I built a low-cost way to find unsafe buildings: model how a building should sway, then let a CNN read the gap between that model and real accelerometer data.",
+      highlights: [
+        "Modeled building sway with a differential equation; trained a CNN on its gap vs. real sensor readings.",
+        "Cut the cost of unsafe-building detection by 93%.",
+        "Won me a Rise Global Fellowship (Rhodes Trust & Schmidt Futures) — 1 of 100 from 10,000+ applicants.",
+        "Presented at the University of Oxford and covered in 20+ news stories."
+      ],
+      tags: ["CNN", "Differential equations", "Accelerometers", "Python"],
+      links: [{ label: "Watch the Oxford talk", url: "https://youtu.be/EbbGutxnNeg" }]
     },
     veo3: {
-      title: "Author, Research on Detecting Veo3 AI Videos",
-      date: "2024",
-      summary: "Authored a paper detecting Veo3-generated content with ~91% accuracy using a CNN-based model, reviewed and evaluated by Prof. Hanan Hibshi (Carnegie Mellon University).",
-      lorem: "Researched deep learning techniques for synthetic media forensics. Designed a convolutional neural network architecture analyzing frame consistency and artifact signatures in Google Veo3 AI video models.",
-      fileName: "Veo3_AI_Detection_Paper.pdf",
-      docUrl: "https://www.mertozkardes.com.tr/",
-      projectUrl: "https://www.mertozkardes.com.tr/"
+      title: "Detecting Veo 3 AI-Generated Video",
+      date: "2024 – 2025",
+      summary: "Independent research on telling Google Veo 3 videos apart from real footage, written up as a paper with feedback from Prof. Hanan Hibshi (Carnegie Mellon).",
+      highlights: [
+        "Trained a CNN classifier that detects Veo 3-generated video with ~91% accuracy.",
+        "Looks at frame consistency and the artifact signatures generative video leaves behind.",
+        "Wrote up the method as a research paper reviewed by Prof. Hibshi."
+      ],
+      tags: ["CNN", "Computer vision", "PyTorch", "Media forensics"],
+      links: []
+    },
+    actior: {
+      title: "Co-Founder & CEO, Actior Exam Management Systems",
+      date: "2024 – 2026",
+      summary: "Built and sold a SQL-backed web platform that automates exam enrollment, payments and announcements for schools.",
+      highlights: [
+        "Signed 2 schools to annual B2B subscriptions.",
+        "The platform has processed 10,000+ exam applications.",
+        "Handles registration, online payments, seating and admin reporting in one place."
+      ],
+      tags: ["SQL", "Web platform", "Payments", "B2B SaaS"],
+      links: []
     },
     solar: {
-      title: "Intern, University Solar Car Team (Solaris)",
+      title: "Research Intern, Solaris Solar Car Team",
       date: "2024 – 2025",
-      summary: "Contributed to a 2nd place finish in efficiency and 3rd overall out of 50+ teams in the Albi Eco Solar Race by researching algorithms assisting the driver to reduce energy consumption.",
-      lorem: "Investigated power optimization algorithms and telemetry data processing to assist drivers in managing battery state-of-charge, speed control, and solar panel collection during high-endurance solar races.",
-      fileName: "Solaris_Optimization_Report.pdf",
-      docUrl: "https://www.mertozkardes.com.tr/",
-      projectUrl: "https://www.mertozkardes.com.tr/"
+      summary: "First high-school intern on the university's solar car team, researching driver-assist algorithms that cut the car's energy use.",
+      highlights: [
+        "Researched speed and power strategies that help the driver manage battery charge over a race.",
+        "Team finished 2nd in efficiency and 3rd overall of 50+ teams at the Albi Eco Race."
+      ],
+      tags: ["Optimization", "Telemetry", "Energy"],
+      links: []
+    },
+    rocket: {
+      title: "Co-Founder & Head of Avionics, Model Rocket Team",
+      date: "2022 – 2026",
+      summary: "Led avionics R&D for 3 model rockets — flight computers, telemetry and recovery.",
+      highlights: [
+        "Best flight carried a 4 kg (9 lb) experimental payload to 7,400 ft.",
+        "Designed and simulation-tested flight electronics before every launch."
+      ],
+      tags: ["Avionics", "Embedded", "Telemetry", "Simulation"],
+      links: []
+    },
+    frc: {
+      title: "Sub-Division Lead, FIRST Robotics Competition Team",
+      date: "2022 – 2026",
+      summary: "Ran planning, execution and reporting for the team's outreach work.",
+      highlights: [
+        "Managed 50+ outreach projects that reached 3 million people.",
+        "Won the Engineering Inspiration Award at the FIRST World Championship.",
+        "Helped secure NASA grants for the team twice."
+      ],
+      tags: ["Leadership", "Outreach", "Robotics"],
+      links: []
+    },
+    cras: {
+      title: "Creator, Cras AI",
+      date: "2024",
+      summary: "A multilingual LLM platform that reads PDFs and images and answers questions about them, on a Go microservice backend.",
+      highlights: [
+        "Document pipeline with OCR and vector-embedding search.",
+        "Streams LLM answers in real time across multiple languages."
+      ],
+      tags: ["Go", "LLMs", "OCR", "Vector search"],
+      links: []
+    },
+    rumer: {
+      title: "Founder, Rumer Digital Business Cards",
+      date: "2024",
+      summary: "A digital business card platform for sharing contact details instantly over NFC and QR codes.",
+      highlights: [
+        "Tap or scan to exchange contact cards.",
+        "Tracks who viewed your card and when."
+      ],
+      tags: ["Full-stack", "NFC", "QR"],
+      links: []
     }
   };
 
@@ -72,48 +140,44 @@
   const projectDetailTitle = document.getElementById('project-detail-title');
   const projectDetailDate = document.getElementById('project-detail-date');
   const projectDetailSummary = document.getElementById('project-detail-summary');
-  const projectDetailLorem = document.getElementById('project-detail-lorem');
-  const projectDetailDownloadBtn = document.getElementById('project-detail-download-btn');
+  const projectDetailHighlights = document.getElementById('project-detail-highlights');
+  const projectDetailTags = document.getElementById('project-detail-tags');
+  const projectDetailLinks = document.getElementById('project-detail-links');
   const emptyState = document.getElementById('projects-empty-state');
   const detailWorkspace = document.getElementById('project-detail-workspace');
 
   function resetProjectsWorkspace() {
     if (emptyState) emptyState.style.display = 'flex';
     if (detailWorkspace) detailWorkspace.style.display = 'none';
+    document.querySelectorAll('.project-book-item').forEach(item => item.classList.remove('selected-project'));
+  }
 
-    document.querySelectorAll('.project-book-item').forEach(item => {
-      item.classList.remove('selected-project');
-    });
+  function el(tag, text, attrs) {
+    const node = document.createElement(tag);
+    if (text) node.textContent = text;
+    if (attrs) Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
+    return node;
   }
 
   function renderProjectDetails(projectId) {
     const data = projectsData[projectId];
     if (!data) return;
 
-    if (projectDetailTitle) projectDetailTitle.textContent = data.title;
-    if (projectDetailDate) projectDetailDate.textContent = data.date;
-    if (projectDetailSummary) projectDetailSummary.textContent = data.summary;
-    if (projectDetailLorem) projectDetailLorem.textContent = data.lorem;
-    
-    if (projectDetailDownloadBtn) {
-      projectDetailDownloadBtn.textContent = `Open Documentation at mertozkardes.com.tr ↗`;
-      projectDetailDownloadBtn.href = data.docUrl || "https://www.mertozkardes.com.tr/";
-      projectDetailDownloadBtn.target = "_blank";
-      projectDetailDownloadBtn.rel = "noopener noreferrer";
-      projectDetailDownloadBtn.onclick = null;
-    }
+    projectDetailTitle.textContent = data.title;
+    projectDetailDate.textContent = data.date;
+    projectDetailSummary.textContent = data.summary;
+    projectDetailHighlights.replaceChildren(...data.highlights.map(h => el('li', h)));
+    projectDetailTags.replaceChildren(...data.tags.map(t => el('span', t)));
+    projectDetailLinks.replaceChildren(...data.links.map(l =>
+      el('a', `${l.label} ↗`, { href: l.url, target: '_blank', rel: 'noopener noreferrer', class: 'project-download-btn' })
+    ));
+    projectDetailLinks.style.display = data.links.length ? '' : 'none';
 
-    // Show workspace details and hide empty prompt
     if (emptyState) emptyState.style.display = 'none';
-    if (detailWorkspace) detailWorkspace.style.display = 'flex';
+    if (detailWorkspace) { detailWorkspace.style.display = 'flex'; detailWorkspace.scrollTop = 0; }
 
-    // Highlight active project book on shelf
     document.querySelectorAll('.project-book-item').forEach(item => {
-      if (item.getAttribute('data-project') === projectId) {
-        item.classList.add('selected-project');
-      } else {
-        item.classList.remove('selected-project');
-      }
+      item.classList.toggle('selected-project', item.getAttribute('data-project') === projectId);
     });
   }
 
@@ -208,6 +272,28 @@
       }
     });
   }
+
+  // 4b. ABOUT ME MODAL
+  const aboutModal = document.getElementById('about-modal');
+  const btnOpenAbout = document.getElementById('btn-open-about');
+  const closeAboutBtn = document.getElementById('close-about-btn');
+  const openAbout = () => aboutModal.classList.add('open');
+  const closeAbout = () => {
+    aboutModal.classList.remove('open');
+    if (location.hash === '#about') history.replaceState(null, '', location.pathname + location.search);
+  };
+
+  if (aboutModal && btnOpenAbout && closeAboutBtn) {
+    btnOpenAbout.addEventListener('click', (e) => { e.preventDefault(); openAbout(); });
+    closeAboutBtn.addEventListener('click', closeAbout);
+    aboutModal.addEventListener('click', (e) => { if (e.target === aboutModal) closeAbout(); });
+    if (location.hash === '#about') openAbout();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
+  });
 
   // 5. HEAD CLICK VIBRANT SPIN TRIGGER (NO MOUSE TRACKING)
   const userHeadWrapper = document.querySelector('.user-head-wrapper');
